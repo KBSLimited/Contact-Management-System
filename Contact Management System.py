@@ -77,7 +77,7 @@ def search_contact():
         print(f"Additional Info: {contacts[phone]['additional_info']}")
     else:
         print("Contact not found.")
-
+        
 # Function to display all contacts
 def display_contacts():
     print("\nAll contacts:")
