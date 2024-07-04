@@ -1,93 +1,47 @@
 Contact Management System
+This is a simple Contact Management System implemented in Python. It allows you to manage contacts with basic functionalities such as adding, editing, deleting, searching, displaying all contacts, and exporting contacts to a text file.
 
-Welcome to the Contact Management System! This Python program allows users to manage their contacts through a command-line interface (CLI). Users can add, edit, delete, search, display, export contacts to a file, and optionally import contacts from a file.
+Features
+- Add a New Contact: Enter details like name, phone number, email, and additional information for a new contact.
+- Edit an Existing Contact: Modify details of an existing contact based on their phone number.
+- Delete a Contact: Remove a contact from the system using their phone number.
+- Search for a Contact: Find and display details of a contact based on their phone number.
+- Display All Contacts: View all contacts stored in the system.
+- Export Contacts: Save all contacts to a JSON format text file.
+- Bonus Feature (Option 7): Import contacts from a text file (not fully implemented in this version).
 
-Features:
--Add a new contact: Enter details such as name, phone number, email address, and additional information for a new contact.
--Edit an existing contact: Modify any details of an existing contact based on their phone number.
--Delete a contact: Remove a contact from the system using their phone number.
--Search for a contact: Look up a contact by their phone number to view their details.
--Display all contacts: View a list of all contacts stored in the system.
--Export contacts to a text file: Save all contacts to a JSON file for backup or sharing.
--Import contacts from a text file (Bonus): Read contacts from a JSON file and add them to the system.
-
--Contact Categories: Categorize contacts into groups (e.g., friends, family, work).
--Enhanced Contact Search: Search by name, phone number, email address, or additional information.
--Contact Sorting: Display contacts alphabetically by name or based on other criteria.
--Backup and Restore: Create automatic backups of contact data and restore data from backup files.
--Custom Contact Fields: Define and store additional fields for contacts (e.g., birthdays, anniversaries).
-
-Installation
-Clone the repository:
+Usage
+Clone the Repository
 
 bash
-
 Copy code
-git clone <https://github.com/KBSLimited/Contact-Management-System.git>
-cd contact-management-system
+git clone https://github.com/yourusername/contacts-manager.git
+cd contacts-manager
+Run the Application
 
-Run the program:
-
+bash
 Copy code
-python contact_management.py
-Follow the on-screen instructions to use the Contact Management System.
+python contacts_manager.py
+Follow the On-screen Menu
 
-Usage:
--When you run the program, you will see a menu with options numbered from 1 to 8.
--Enter the number corresponding to the action you want to perform (e.g., add a contact, edit a contact).
--Follow the prompts to enter information as requested.
--Use input validation to ensure correct formatting of contact details such as phone numbers and email addresses.
--Errors or invalid inputs will be handled gracefully with appropriate error messages.
+Enter a number from 1 to 8 based on the action you want to perform.
+For example, to add a new contact, enter 1, and follow the prompts.
+Input Validation
 
-Examples:
--Adding a New Contact
+The system validates input for phone numbers and email addresses.
+Phone numbers must be exactly 10 digits.
+Email addresses must follow a standard format (user@example.com).
+Exporting Contacts
 
-mathematica
+When prompted to export contacts (6), enter a filename (e.g., contacts.json).
+Contacts will be exported in JSON format.
+Exiting the Program
 
-Copy code
-
-Welcome to the Contact Management System!
-Menu:
-1. Add a new contact
-2. Edit an existing contact
-3. Delete a contact
-4. Search for a contact
-5. Display all contacts
-6. Export contacts to a text file
-7. Import contacts from a text file 
-8. Quit
-
-Enter your choice: 1
-
-Adding a new contact:
--Enter name: John Doe
--Enter phone number (10 digits): 1234567890
--Enter email address: john.doe@example.com
--Enter additional information (optional): Friend
-
--Contact added: John Doe (1234567890)
--Displaying All Contacts
-
-yaml
-
-Copy code
-
--Enter your choice: 5
-
-All contacts:
--Name: John Doe, Phone: 1234567890, Email: john.doe@example.com, Additional Info: Friend
--Exporting Contacts to a Text File
-
-mathematica
-
-Copy code
-
--Enter your choice: 6
--Enter filename to export contacts (e.g., contacts.json): contacts.json
-
--Contacts exported to contacts.json.
-
-Contributors
-DeAndre Johnson
-
-Feel free to customize this README file further based on your specific implementation and additional features you might include. Including clear instructions, examples, and a license statement will help users understand and utilize your Contact Management System effectively.
+Choose option 8 to exit the Contact Management System.
+Requirements
+Python 3.x
+No additional libraries are required beyond the standard Python library.
+Notes
+This system does not currently implement importing contacts from a text file (Option 7).
+Ensure that all input data is entered correctly to avoid validation errors.
+This README provides a brief overview of the application, its features, usage instructions, and some additional notes. You can expand on it further based on your specific needs or add more details about the implementation if necessary.
